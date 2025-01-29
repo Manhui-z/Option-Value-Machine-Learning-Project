@@ -2,7 +2,7 @@
 
 This project examines European call option pricing data on the S&P 500. The core idea of the project is to use the training data to build statistical/ML models with 
 1) Value as the response (i.e.,a regression problem) and then
-2) BS as the response (i.e.,a classification problem).
+2) BS (Overestimated/Underestimated) as the response (i.e.,a classification problem).
 
 Our analysis first focused on predicting the 'Value' of options using a 11 different machine learning techniques, they are Linear Regression, Linear Regression after Best Subset Selection, KNN Regression, Decision Tree Regression, Random Forest Regression, Lasso Regression, Ridge Regression, SVM for Regression, Neural Networks, Radial Basis Function Networks, and Gradient Boosting Regressor. We assess them based on Mean Square Error (MSE) and out-of-sample R-Squared. To enhance model accuracy, we standardized features to mitigate bias from scale differences, particularly crucial for models sensitive to feature distance. The standout models in terms of low MSE and high R-squared were Neural Networks, Gradient Boosting Regression, and Random Forest Regression. These models excel in capturing complex, non-linear relationships within the data, a critical advantage in financial markets influenced by dynamic, non-linear factors like market volatility and sentiment. The Neural Network, optimized with Adam optimizer and trained using five-fold cross-validation, proved particularly effective, highlighting its ability to learn and adapt from data intricacies.
 
